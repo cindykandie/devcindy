@@ -1,0 +1,202 @@
+:root{
+    color: hsl(0, 60%, 3%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    text-decoration: unset;
+    text-align: justify;
+
+}
+body{
+    background-image: linear-gradient(to right, rgb(193, 212, 248), rgb(226, 245, 247));
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+
+}
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 220%;
+    color: rgb(50, 3, 94);
+}
+.blog-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+body .nav-bar a {
+    text-decoration: none;
+    color: black;
+    margin-left: auto;
+    border: 2px solid blue;
+    padding: 3px 3px;
+    border-radius: 5px;
+    background-color: #cacaf3;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  
+  body .nav-bar a:hover {
+    color: brown;
+    text-decoration: underline;
+  }
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 0.5in[start] minmax(0, 8.5in) [end] 0.5in 1fr;
+    margin-top: 60px;
+    padding: 0.5in 20px;
+    background-image: linear-gradient(to bottom right,rgb(121, 34, 121),8%,rgb(237, 194, 250));
+    box-shadow: -2px -4px 5px black;
+    text-align: center;
+
+    
+}
+
+article * {
+    grid-column:start/end;
+    padding: 10px auto;
+}
+h1{
+    font-size: 150%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+h4{
+    text-align: center;
+    text-decoration: underline black;
+
+}
+time{
+    margin-left:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+
+}
+
+body .contact form {
+    padding: 20px 20px;
+    width: 65%;
+    margin: auto;
+  }
+  
+  body .contact form h4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  body .contact form input {
+    padding: 10px 5px 3px 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  body .contact form .msg-box {
+    height: 100px;
+    padding: 0;
+  }
+  
+  body .contact form .email-btn {
+    background-image: linear-gradient(45deg, #9e469e, deeppink);
+    margin: 10px auto;
+    border-radius: 10px;
+    color: lemonchiffon;
+    display: flex;
+    justify-content: center;
+  }
+  
+  body .contact form .email-btn:hover {
+    background-image: linear-gradient(45deg, deeppink, #d814ff);
+    color: #89f3f7;
+    -webkit-text-decoration: #92f312 underline;
+            text-decoration: #92f312 underline;
+  }
+
+body footer {
+    background-color: #cb5ae2;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  body footer .socials {
+    padding: 20px 20px;
+    display: flex;
+  }
+  
+  body footer .socials img {
+    width: 30px;
+    margin: auto 20px;
+  }
+  
+  body footer p {
+    font-size: 10px;
+    text-align: center;
+  }
+@media (max-width: 8.5in){
+article{
+    grid-template-columns: 1fr 5%[start] 90% [end] 5% 1fr;
+    overflow: hidden;
+}
+
+.nav-bar{
+    margin: auto 0 auto 2%;
+    font-size: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.nav-bar *{
+    margin: auto 20px;
+    font-size: 18px;
+}
+:root{
+    font-size: 18px;
+}
+}
+@media (max-width: 8.5in){
+    :root{
+        font-size: 18px;
+    }
+}
+@media (min-width: 700px){
+    article{
+        font-size: 130%;
+    }
+}
+    @media (min-width: 900px){
+    article{
+        grid-template-columns: 1fr 5%[start] 90% [end] 5% 1fr;
+        overflow: hidden;
+        width: 700px;
+        margin: auto;
+        font-size: 150%;
+    }
+}
+

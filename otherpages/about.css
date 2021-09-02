@@ -1,0 +1,23 @@
+body {
+  background-color: yellow;
+  color: #000000;
+  height: 100vh;
+}
+
+p {
+  max-height: 100%;
+  font-size: 6rem;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=about.css.map */

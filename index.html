@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="static/js/loader.js"></script> -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <script defer src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Cindy Kandie</title>
+</head>
+
+<body onclick="bodyCloseNav()" class="dark">
+    <div class="main-container">
+
+        <!-- HEADER -->
+        <header>
+           <img class="logo"src="assets/icons/logo2.png" alt="Cindy" title="CindyKandie">
+           
+            <div class="desktop">
+            <a href="#" title="Home" rel="noopener">Home</a>
+
+            <a href="#skills" title="Skills" rel="noopener">Skills</a>
+            
+            <a href="#projects" title="Projects" rel="noopener">Projects</a>
+            
+            <a href="#contact" title="Contact" rel="noopener">Contact</a>
+
+            <a href="assets/docs/Resume-pdf.pdf" target="_blank" rel="noopener" title="My Resumé" >My Resumé</a> 
+            </div>
+
+            <ul class="phone-screen">
+                <li>
+                    <img class="close-nav" onclick="closeNav()" src="assets/icons/close.svg" alt="">
+                </li>
+                <li>
+                    <a href="#" title="Home" rel="noopener">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" title="Skills" rel="noopener">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" title="Projects" rel="noopener">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" title="Contact" rel="noopener">Contact</a>
+                </li>
+                <li>
+                    <a href="assets/docs/Resume-pdf.pdf" target="_blank" rel="noopener" title="My Resumé" >My Resumé</a>
+                </li>
+            </ul>
+
+            <img class="open-nav" onclick="openNav()"src="assets/icons/menu.svg" alt="">
+   
+            
+        </header>
+        <!-- HEADER -->
+        <!-- PAGE NAV-BAR --> 
+        <!-- <nav class="page-navbar">
+            <div> <a href="">Home</a> </div>
+            <div> <a href="">About</a> </div> 
+            <div> <a href="">Skills</a> </div>
+            <div> <a href="">Work</a> </div>
+            <div> <a href="">Contact</a> </div>
+        </nav> -->
+       <!-- PAGE NAV-BAR
+
+        <!-- INTRO -->
+        <section class="introduction">
+             
+            <div class="intro-phrase">
+                <h2>Hey. Am Cindy!</h2> <br>
+                <span>Front-End Web Developer</span> <BR>
+                <span class="typewritten" data-wait="" data-words='["REACT DEVELOPER.","JAVASCRIPT developer. ","SOLVER.", "rad DESIGNER.  "]'>React Developer</span> <br>
+                <p>
+                    I am a young developer excited about building dynamic, flexible and mind-blowing websites.
+                </p> <br>
+                <span class="span-small"><a href="mailto:cindjk6@gmail.com">LET'S WORK TOGETHER</a></span>
+
+            </div>
+            <img src="assets/images/profilesvg.svg" alt="Image Of Me">
+        </section>
+        <!-- INTRO -->
+
+
+
+        <!-- TECH SKILLS -->
+
+        <section class="skill-cards">
+            <h3 class="cards-head">What I Do</h3>
+
+            <div class="skills" id="skills">
+
+                <div class="card card1">
+                <h4>HTML $ CSS</h4>
+                    <UL>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SASS $ SCSS</li>
+                    </UL>
+                    <br>
+                    <div class="skill-icons">
+                        <img src="assets/icons/html-five2.svg" alt="" >
+                        <img src="assets/icons/css3.svg" alt="">
+                        <img src="assets/icons/sass.png" alt="">
+                    </div>
+                    
+                </div>
+
+                <div class="card card2">
+                <h4>JAVASCRIPT</h4>
+
+                <UL>
+                        <li>PWAS</li>
+                        <li></li>
+                        <li>ALGORITHMS</li>
+                    </UL>
+                    <br>
+                    <div class="skill-icons">
+                        <img src="assets/icons/js.png" alt="" >
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="card card4">
+                    
+                    <h4>LIBRARIES</h4>
+                    <UL>
+                        <li>REACTJS</li>
+                        <li>JQUERY</li>
+                        <li>    <br>  </li>
+                    </UL>
+                    <br>
+                    <div class="skill-icons">
+                        <img src="assets/icons/reactjs.jpg" alt="">
+                        <img src="assets/icons/jquery.png" alt="" >
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card card3">
+                    
+                    <h4>FRAMEWORKS</h4>
+                    <UL>
+                        <li>VUEJS</li>
+                        <li>ANGULAR</li>
+                        <li>BOOTSTRAP</li>
+                    </UL>
+                    <br>
+                    <div class="skill-icons">
+                        <img src="assets/icons/vuejs.png" alt="" >
+                        <img src="assets/icons/angular.png" alt="">
+                        <img src="assets/icons/bootstrap.jpg" alt="">
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </section>
+
+        <!-- TECH SKILLS -->
+
+
+
+        <!-- MY WORK -->
+        <section class="work-cards" id="projects">
+            <h3 class="cards-head">My Work $ Projects</h3>
+
+            <div class="projects">
+                <!-- Bakery -->
+                <div class="card card1">
+                    <h4>Netflix Landing Page Replica</h4>
+                    <img src="assets/images/netflix.png" alt="" height="" >
+                    <h5 class="live-site"><a href="https://fauxnetflix.netlify.app" target="_blank">Live Website </a></h5>
+                    <h5 class="view-code"><a href="https://github.com/cindykandie/fauxnetflix" target="_blank">
+                        View Code <img src="" alt="" >
+                    </a></h5>
+                    <p>This is a replica of the Netflix landing page. This project helped me up my CSS skills and I really enjoyed working on it.
+                    </p>
+                </div>
+
+            </div>        
+        </section>        
+
+        <!-- MY WORK -->
+
+        <!-- ABOUT ME -->
+
+        <section class="about-me">
+            <h3 class="cards-head">About Me</h3>
+            <h4>Who am I?</h4>
+            <p> 
+                I am a <span>young passionate web developer</span>, ready to learn
+                new things and trying them out. Challenging the
+                "impossible" and solving real life problems are the reasons I wake up every morning. <br> I am visionary
+                about my career in <span>Web Development and Web Design</span> and I carefully take every step forward to helping myself
+                become better everyday. <br>
+                I enjoy working with other developers and designers who I actively learn from.
+                <br>
+                
+                I have been practising Front-End Web Development for three years and I am interested in working on bigger projects that are impactful and will steer me forward in my career.
+                <br>
+                I would be delighted to have an opportunity to work with you and show you that my skills are good for the job. Please feel free to contact me at your earliest convenience.  I appreciate the time you have taken to visit my portfolio.
+                <br>
+                Thank You. 
+                <h4>Cindy Kandie</h4>
+            </p>
+        </section>
+        <!-- ABOUT ME -->
+
+        <!-- FOOTER -->
+        <section class="contact" id="contact">
+                <form>
+                    <!-- <h4>Write To Me</h4>
+                    <input type="text" placeholder="Your Name"><br>
+                    <input type="email" placeholder="Your Email"><br> -->
+                   
+                    <span class="email-btn span-small"><a href="mailto:cindjk6@gmail.com">LET'S WORK TOGETHER</a></span>
+                </form>
+        </section>
+
+        <footer>
+            <div class="socials">
+                <a href="github.com/cindykandie">
+                    <img title="GitHub" src="assets/icons/git.svg" alt="" > 
+                </a>
+
+                <a title="Twitter" href="twitter.com/cindy_kandie">
+                    <img src="assets/icons/twitter.svg" alt="" > 
+                </a>
+
+                <a href="mailto:cindjk6@gmail.com">
+                    <img title="Email" src="assets/icons/email.svg" alt="" > 
+                </a>
+
+                <a href="https://m.youtube.com/channel/UCZtWqdhrmQyNNBR2vZtbOuw/videos">
+                    <img title="YouTube" src="assets/icons/youtube.svg" alt="" > <br>
+                </a>
+
+                <a href="https://www.linkedin.com/in/cindykandie/">
+                    <img title="LinkedIn" src="assets/icons/linkedin.svg" alt="" > <br>
+                </a>
+                
+            </div>
+            <a href="#">
+                <p class="copyright"> All rights reserved.<br>
+                    @cindykandie<br>
+                    2020
+                </p>
+            </a>
+            
+        </footer>
+        
+        <!-- FOOTER -->
+
+        <!-- The spinner -->
+        <div class="load-body">
+
+            <div class="load">
+                <!-- The spinner -->
+            </div>
+
+        </div>
+        <!-- The spinner -->
+
+    </div>
+</body>
+
+</html>
