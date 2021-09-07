@@ -1,19 +1,19 @@
-$background-color: rgb(218, 218, 248);
+$mainColor: rgb(241, 245, 247);
+$primaryColor:rgb(14, 13, 13);
+$secondaryColor:rgb(2, 247, 255);
+
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
+    
+    box-sizing: border-box;
 }
 
 body{
-    margin-top: 0px;
-    margin:0px;
     font-family: georgia, 'Times New Roman', Times, serif;
     overflow-x:hidden;
-    overflow-y:auto;
-    background-color: $background-color;
-    color: rgb(39, 36, 36);
-    width: 100vw;
+    overflow-y:none;
+    background-color: $mainColor;
+    color: $primaryColor;
+    width: 100%;
 
     
 
@@ -35,7 +35,7 @@ body{
 
         img{
             margin-right: auto;        
-            background-color: rgba(68, 185, 214, 0.65);
+            background-color: none;
             border-radius: 2px;
             padding: 10px 0 0;
             flex:1;
@@ -44,7 +44,7 @@ body{
             flex:4;
             display: flex;
             justify-content: space-evenly;
-            align-items: center;
+            align-items: flex-end;
             flex-direction: column;
             position: relative;
             display: none;
@@ -52,17 +52,16 @@ body{
        
         a{
             text-decoration: none;
-            color: black;
+            color: $primaryColor;
             margin-left: auto;
-            border: 2px solid blue;
+            border: none;
             padding: 3px 3px;
             border-radius: 5px;
-            background-color: rgb(202, 202, 243);
             font-weight: 500;
 
         }
         a:hover{
-            color: rgb(117, 4, 4);
+            border-bottom: 1px solid $primaryColor;
         }
         ul{
             flex:3;
@@ -73,12 +72,11 @@ body{
             z-index: 2;
             position: relative;
             text-align: justify;
-            border-radius: 5px;
-            height: 220px;
+            height: 250px;
             width: 100px;
-            transform: translate(55%,-110%);
-            background-color: rgba(68, 185, 214, 0.65);
-            transition: transform 0.5s ease-in;
+            transform: translate(150%,-10%);
+            background-color: $primaryColor;
+            transition: transform 0.85s ease-in;
 
             li{
                 list-style: none;
@@ -87,31 +85,27 @@ body{
                 margin: auto 10px;
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: $mainColor;
                     margin-left: auto;
                     border: none;
                     padding: 3px 3px;
-                    border-radius: 5px;
                     font-weight: 500;
-                    background-color: rgb(123, 252, 245);
+                    
 
         
                 }
                 a:hover{
-                    color: rgb(155, 18, 18);
-                    text-decoration: underline;
+                    border-bottom: 1px solid $mainColor;
                 }
                 img{
-                    background-color: rgba(240, 220, 220,0);
                     height: 35px;
                     position: absolute;
-                    left: 133px;
+                    left: 157px;
                     margin-right:auto;
+                    filter: invert(1);
 
                 }
-                img:hover{
-                    filter: invert(1);
-                }
+                
             }
             
         }
@@ -132,64 +126,53 @@ body{
         flex-direction: column-reverse;
         .intro-phrase{
             line-height: 2;
-            background-image: url(../assets/icons/profilesvg.svg);
             background-size: contain;
             background-position: right;
             background-repeat: no-repeat;
-            max-width: 96vw;
+
             h2{
-                color: lightcoral;
-                display: inline-block;
-                line-height: 2;
-                font-size: 1.6rem;
-                border-radius: 2px;
-                background-image: linear-gradient(to bottom, #c94eaa,#97051d, #1b2525);
-                -webkit-background-clip: text;
-                -o-background-clip: text;
-                -moz-background-clip: text;
-                color: transparent;
-                font-family: 'Times New Roman', Times, serif;
-            }
-            p{
-                background-color: rgba(253, 251, 251, 0.5);
-                padding: 2px;
-             
-                border-radius: 2px;
-                max-width: 90vw;
-                overflow-x: none;
-            }
-            span{
-                background-image: linear-gradient(to right,rgb(178, 178, 248)15%, rgb(2, 247, 255));
-                display: inline-block;
-                box-shadow: 2px 2px 3px rgb(84, 82, 253);
-                padding: 5px 10px;
-                margin: 10px auto;
-                color: rgb(90, 15, 90);
-                text-transform: uppercase;
-                font-size: 80%;
-                font-weight: 700;
-                border-radius: 2px;
-            }
-            .typewritten{
-                color: #4d302a;
-                min-width: 30vw;
-                max-width: 320px;
-                width: auto;
-                box-shadow: 2px 2px 3px rgb(162, 82, 253);
-                font-size: 75%;
-                height: 50px;
-                padding: 15px 20px;
-            }
-            a{
-                text-decoration: none;
-                font-size: 14px;
-                
+                margin-left: 15px;
+                    
 
             }
-            a:hover{
-                text-decoration: underline;
-                text-decoration-color: darkgrey;
-                color: rgb(196, 20, 20);
+           
+            p{
+                margin: auto;
+                padding: auto 1rem;
+                border-radius: 2px;
+                width: 100%;
+                padding: 5px 15px;
+                max-width: 100vw;
+                width: 95vw;
+               
+            }
+            .email-btn{
+                background:$primaryColor;
+                margin: 10px auto;
+                border-radius:5px;
+                padding: 4px 5px;
+                margin-left: 1rem;
+                color: $mainColor;
+                border: 2px solid $primaryColor;
+                transition: 00.3s;
+    
+    
+                
+                a{
+                    color: $mainColor;
+                    text-decoration: none;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    color: $primaryColor;
+                    
+                }
+            }
+            .email-btn:hover{
+                background:$mainColor;
+                color: $primaryColor;
+                border: 2px solid $primaryColor;   
             }
         }
         img{
@@ -201,7 +184,9 @@ body{
         padding: 20px 15px;
         h3{
             text-align: center;
-            font-size: 150%;
+                font-size: 1.5rem;
+                text-decoration: underline;
+                text-transform: uppercase;
         }
         
 
@@ -210,23 +195,24 @@ body{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            
             .card{
-                border: 2px solid rgb(112, 67, 172);
-                width: 85%;
+                border: 2px solid $primaryColor;
+                width: 100%;
                 height: auto;
-                margin: 20px auto;
-                padding: 20px 20px 30px;
+                margin: 20px 30px;
+                padding: 20px auto;
                 line-height: 2;
                 border-radius: 4px;
-                box-shadow: 2px 2px 3px rgb(64, 63, 145);
-                background-color: rgb(197, 160, 245);
+                box-shadow: 2px 2px 3px rgb(46, 45, 45);
+                background-color: $mainColor;
                 font-weight: 600;
                 color: rgb(59, 55, 55);
 
 
                 h4{
                     text-align: center;
-                    padding: auto auto;
+                    padding: auto;
                     text-decoration: navy underline solid;
                     color: black;
                 }
@@ -243,20 +229,15 @@ body{
                 }
 
                 ul{
-                    text-align: center;
+                    padding: auto;
                    
                     li{
-                        list-style: none;
+                        list-style-type: none;
+                        text-align: center;
 
                     }
                 }
                         
-            }
-            .card3, .card4{
-                h4{
-                    font-family: elephant,georgia, Arial, Helvetica, sans-serif;
-                    font-size: 1.1rem;
-                }
             }
         }
     }
@@ -266,6 +247,8 @@ body{
         h3{
             text-align: center;
             font-size: 1.5rem;
+            text-decoration: underline;
+            text-transform: uppercase;
         }
         .projects{
             display: flex;
@@ -273,7 +256,7 @@ body{
             align-items: center;
             justify-content: center;
             .card{
-                border: 2px solid rgb(112, 67, 172);
+                border: 2px solid $primaryColor;
                 width: 90vw;
                 max-width: 1000px;
                 height: auto;
@@ -282,18 +265,17 @@ body{
                 padding: 10px 0 0;
                 line-height: 2;
                 border-radius: 5px;
-                box-shadow: 2px 2px 3px rgb(64, 63, 145);
-                background-color: rgb(197, 160, 245);
+                box-shadow: 2px 2px 3px rgb(68, 66, 66);
+                background-color: $mainColor;
                 font-weight: 600;
-                color: rgb(59, 55, 55);
+                color: $primaryColor;
 
 
                 h4{
                     text-align: center;
                     font-family: georgia, Arial, Helvetica, sans-serif;
                     padding: auto auto;
-                    text-decoration: rgb(75, 116, 117) underline solid;
-                    color: rgb(150, 74, 12);
+                    color: $primaryColor;
                     font-size: 150%;
                 }  
                 
@@ -302,29 +284,30 @@ body{
                     padding: 0px 10px;
                 }
                 h5{
-                    background-image: linear-gradient(30deg,rgb(160, 46, 170)5%, rgb(133, 226, 228));
-                    width: 100%;
-                    padding: 10px;
+                    background-image:none;
                     text-align: center;
-                    border-bottom: 1px solid rgb(112, 67, 172);
+                    border-bottom: 1px solid $primaryColor;
 
                     a{
                         text-decoration: none;
                         font-size: 115%;
-                        color: rgb(22, 21, 29);
+                        color: blue;
                         text-transform: uppercase;
                     }
                     a:hover{
-                        color: brown;
+                        color: $primaryColor;
                         text-decoration: underline;
 
                     }
 
                 }
-                h5:hover{
-                    background-image: linear-gradient(-30deg,rgb(160, 46, 170)5%, rgb(133, 226, 228));
+                p{
+                    margin: auto 15px;
                 }
+                
             }
+
+            
             
         }
         button {
@@ -332,7 +315,7 @@ body{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            background-color:rgb(114, 42, 133);
+            background-color:$mainColor;
             border: none;
             outline: none;
             padding: 5px 10px;
@@ -346,7 +329,6 @@ body{
             font-size: 1.2rem;
             color: rgb(3, 12, 12);
             text-shadow: 2px 0px 0px lemonchiffon;
-
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-transform: uppercase;
             text-decoration: none;
@@ -355,39 +337,53 @@ body{
         button:hover{
             background:rgb(228, 141, 250);
             a{
-            color: rgb(185, 40, 4);
+            color: rgb(77, 41, 32);
             text-shadow: none;
             }
         }
     }
+    // see all projects link
+    
+    .more-btn{
+        background:$primaryColor;
+        margin: auto 25%;
+        border-radius:5px;
+        padding: 4px 5px;
+        color: $mainColor;
+        border: 2px solid $primaryColor;
+        transition: 00.3s;
+        display: flex;
+        justify-content:center;
+        color: $mainColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        transition: 00.3s;
+    }
+    .more-btn:hover{
+        background:$mainColor;
+        color: $primaryColor;
+        border: 2px solid $primaryColor;   
+    }
     .about-me{
         padding: 10px 15px;
-        line-height: 1.7;
-        background-color: #d9f0f1;
-        background-size: cover;
-        font-size: 0.8rem;
         max-width: 100vw;
         width: 90vw;
+        line-height: 2;
+        background-color: $mainColor;
+        font-size: 0.95rem;
         margin: auto;
-        h3,h4{
-            color: lightcoral;
+        h3{
+            color: $primaryColor;
             text-align: center;
             letter-spacing: 1.5px;
-            background-image: linear-gradient(to bottom, #c94eaa,#97051d, #1b2525);
-            -webkit-background-clip: text;
-            -o-background-clip: text;
-            -moz-background-clip: text;
-            color: transparent;
             text-decoration: underline;
+            text-transform: uppercase;
                 
         }
         p{
             text-align: justify;
-            span{
-                color:rgb(41, 13, 197);
-                font-size: 1.1rem;
-                font-weight: 600;
-            }
+            
         }
     }
 
@@ -398,60 +394,44 @@ body{
         justify-content:center;
         align-items: center;
 
-        img{
-            width:70vw;
-        }
-        form{
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            h4{
-                margin-bottom: 20px;
+        .email-btn{
+            background:$primaryColor;
+            margin: 10px auto;
+            border-radius:5px;
+            padding: 4px 5px;
+            color: $mainColor;
+            border: 2px solid $primaryColor;
+            transition: 00.3s;
+
+
+            
+            a{
+                color: $mainColor;
+                text-decoration: none;
                 text-align: center;
+                transition: 00.3s;
             }
-            input{
-                padding: 10px 5px 3px 5px;
-                font-size: 16px;
-                font-family: 'Times New Roman', Times, serif;
-                margin-bottom: 20px;
-                width: 100%;
-                border-radius: 5px;
-            }
-            .msg-box{
-                height: 100px;
-                padding:0;
-            }
-            .email-btn{
-                background:rgb(106, 5, 126);
-                margin: 10px auto;
-                border-radius:5px;
-                padding: 4px 5px;
-                color: lemonchiffon;
+            a:hover{
+                color: $primaryColor;
                 
-                a{
-                    color: lemonchiffon;
-                    text-decoration: none;
-                    text-align: center;
-                }
             }
-            .email-btn:hover{
-                background:rgb(216, 20, 255);
-                color: rgb(233, 54, 41);
-                text-decoration: rgb(146, 243, 18)none;
-                text-shadow: 2px 2px 2px #160b13;   
-            }
-        } 
+        }
+        .email-btn:hover{
+            background:$mainColor;
+            color: $primaryColor;
+            border: 2px solid $primaryColor;   
+        }
+         
     }
     footer{
-        background-color: rgb(90, 165, 226);
+        background-color: $mainColor;
+        box-shadow: 5px 0px 3px $primaryColor;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        max-width: 100vw;
+        max-width: 100%;
         cursor: pointer;
 
         .socials{
@@ -462,13 +442,14 @@ body{
                 margin: 20px 20px;
             }
             img:hover{
-                filter: invert(1);
+                transform: scale(1.5);
             }
+            
         }    
         
             a{
                 text-decoration: none;
-                color:black;
+                color:$primaryColor;
                 p{
                     font-size: 10px;
                     padding-bottom: 20px;
@@ -476,41 +457,29 @@ body{
             
         }
         a:hover{
-            color:  rgb(107, 5, 133);
+            color:  blue;
+           
         }
     }
 }
-@media (max-width: 320px){
-    body{
-        .about-me{
-            width: 100vw;
-        }
-        footer{
-            width: 100vw;
 
-        }
-    }
-}
     @media (min-width: 700px){
       body{
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           header{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 99vw;
-            padding:auto 30px;
-            background-color: rgba(68, 185, 214, 0.25);
+            margin:auto;
             overflow-x: hidden;
+            width: 100%;
+            background-color: rgba(192, 191, 247, 0.2);
 
             img{
                 width: 3rem;
                 max-width: 100px;
+                margin-left:5px;
                 flex:1;
-                background-color: rgba(68, 185, 214, 0);
-
-
-
             }
             .desktop{
                 flex:4;
@@ -519,6 +488,7 @@ body{
                 align-items: center;
                 flex-direction: row;
                 position: relative;
+                
                
             }
             ul{
@@ -530,32 +500,21 @@ body{
             
         }
         .introduction{
-            padding: 20px 35px;
             .intro-phrase{
-                line-height: 3;
-                
-               
+                line-height: 1.5;
+                h2{
+                    text-align: center;
+                }
                 p{
-                    background-color: rgba(252, 249, 249, 0.5);
                     padding: 5px;
                     border-radius: 6px;
-                    width: 50vw;
+                    width: 80vw;
                 }
-                span{
-                    font-size: 100%;
-                }
-                .typewritten{
-                    color: #bd2207;
-                    box-shadow: 2px 2px 3px rgb(162, 82, 253);
-                    font-size: 75%;
-                    height: 75px;
-                    vertical-align: middle;
-                    padding: auto auto;  
-                }
+               
+                
                 a{
-                    font-size: 17px;
-
-    
+                    font-size: 16px;
+                    margin: auto;
                 }
                 
             }
@@ -571,8 +530,8 @@ body{
             }
             .skills{   
                 .card{
-                    width: 45%;
-                    height: 400px;
+                    width: 80%;
+                    height: auto;
                     margin: 20px auto;
                     padding: 20px 20px 30px;
                     line-height: 2.5;
@@ -591,7 +550,7 @@ body{
         .about-me{
             padding: 20px 80px;
             line-height: 2;
-            background-color: rgb(217, 240, 241);
+            background-color: inherit;
             h3,h4{
                 font-size: 1.4rem;
                     
@@ -627,11 +586,11 @@ body{
             }
         }
         footer{
-            
+            width: 100vw;
             .socials{
-                
+
                 img{
-                    width: 40px;
+                    width: 30px;
                     margin: 20px 30px;
                 }
                 
@@ -644,11 +603,11 @@ body{
  }
 @media (min-width: 1440px){
     body {
-        font-size: 1.5rem;
-        width: 75vw;
+        font-size: 1.2rem;
+        width: 100vw;
         margin: auto;
         .about-me{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         footer{
             width: 100vw;

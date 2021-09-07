@@ -1,19 +1,15 @@
 * {
-  padding: 0;
-  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  margin-top: 0px;
-  margin: 0px;
   font-family: georgia, 'Times New Roman', Times, serif;
   overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #dadaf8;
-  color: #272424;
-  width: 100vw;
+  overflow-y: none;
+  background-color: #f1f5f7;
+  color: #0e0d0d;
+  width: 100%;
 }
 
 body header {
@@ -40,7 +36,7 @@ body header .logo {
 
 body header img {
   margin-right: auto;
-  background-color: rgba(68, 185, 214, 0.65);
+  background-color: none;
   border-radius: 2px;
   padding: 10px 0 0;
   -webkit-box-flex: 1;
@@ -58,9 +54,9 @@ body header .desktop {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -71,17 +67,16 @@ body header .desktop {
 
 body header a {
   text-decoration: none;
-  color: black;
+  color: #0e0d0d;
   margin-left: auto;
-  border: 2px solid blue;
+  border: none;
   padding: 3px 3px;
   border-radius: 5px;
-  background-color: #cacaf3;
   font-weight: 500;
 }
 
 body header a:hover {
-  color: #750404;
+  border-bottom: 1px solid #0e0d0d;
 }
 
 body header ul {
@@ -104,16 +99,15 @@ body header ul {
   z-index: 2;
   position: relative;
   text-align: justify;
-  border-radius: 5px;
-  height: 220px;
+  height: 250px;
   width: 100px;
-  -webkit-transform: translate(55%, -110%);
-          transform: translate(55%, -110%);
-  background-color: rgba(68, 185, 214, 0.65);
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-  transition: -webkit-transform 0.5s ease-in;
-  transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-transform: translate(150%, -10%);
+          transform: translate(150%, -10%);
+  background-color: #0e0d0d;
+  -webkit-transition: -webkit-transform 0.85s ease-in;
+  transition: -webkit-transform 0.85s ease-in;
+  transition: transform 0.85s ease-in;
+  transition: transform 0.85s ease-in, -webkit-transform 0.85s ease-in;
 }
 
 body header ul li {
@@ -127,29 +121,22 @@ body header ul li {
 
 body header ul li a {
   text-decoration: none;
-  color: black;
+  color: #f1f5f7;
   margin-left: auto;
   border: none;
   padding: 3px 3px;
-  border-radius: 5px;
   font-weight: 500;
-  background-color: #7bfcf5;
 }
 
 body header ul li a:hover {
-  color: #9b1212;
-  text-decoration: underline;
+  border-bottom: 1px solid #f1f5f7;
 }
 
 body header ul li img {
-  background-color: rgba(240, 220, 220, 0);
   height: 35px;
   position: absolute;
-  left: 133px;
+  left: 157px;
   margin-right: auto;
-}
-
-body header ul li img:hover {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
@@ -180,73 +167,53 @@ body .introduction {
 
 body .introduction .intro-phrase {
   line-height: 2;
-  background-image: url(../assets/icons/profilesvg.svg);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  max-width: 96vw;
 }
 
 body .introduction .intro-phrase h2 {
-  color: lightcoral;
-  display: inline-block;
-  line-height: 2;
-  font-size: 1.6rem;
-  border-radius: 2px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c94eaa), color-stop(#97051d), to(#1b2525));
-  background-image: linear-gradient(to bottom, #c94eaa, #97051d, #1b2525);
-  -webkit-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
-  font-family: 'Times New Roman', Times, serif;
+  margin-left: 15px;
 }
 
 body .introduction .intro-phrase p {
-  background-color: rgba(253, 251, 251, 0.5);
-  padding: 2px;
+  margin: auto;
+  padding: auto 1rem;
   border-radius: 2px;
-  max-width: 90vw;
-  overflow-x: none;
+  width: 100%;
+  padding: 5px 15px;
+  max-width: 100vw;
+  width: 95vw;
 }
 
-body .introduction .intro-phrase span {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, #b2b2f8), to(#02f7ff));
-  background-image: linear-gradient(to right, #b2b2f8 15%, #02f7ff);
-  display: inline-block;
-  -webkit-box-shadow: 2px 2px 3px #5452fd;
-          box-shadow: 2px 2px 3px #5452fd;
-  padding: 5px 10px;
+body .introduction .intro-phrase .email-btn {
+  background: #0e0d0d;
   margin: 10px auto;
-  color: #5a0f5a;
-  text-transform: uppercase;
-  font-size: 80%;
-  font-weight: 700;
-  border-radius: 2px;
+  border-radius: 5px;
+  padding: 4px 5px;
+  margin-left: 1rem;
+  color: #f1f5f7;
+  border: 2px solid #0e0d0d;
+  -webkit-transition: 00.3s;
+  transition: 00.3s;
 }
 
-body .introduction .intro-phrase .typewritten {
-  color: #4d302a;
-  min-width: 30vw;
-  max-width: 320px;
-  width: auto;
-  -webkit-box-shadow: 2px 2px 3px #a252fd;
-          box-shadow: 2px 2px 3px #a252fd;
-  font-size: 75%;
-  height: 50px;
-  padding: 15px 20px;
-}
-
-body .introduction .intro-phrase a {
+body .introduction .intro-phrase .email-btn a {
+  color: #f1f5f7;
   text-decoration: none;
-  font-size: 14px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-body .introduction .intro-phrase a:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: darkgrey;
-          text-decoration-color: darkgrey;
-  color: #c41414;
+body .introduction .intro-phrase .email-btn a:hover {
+  color: #0e0d0d;
+}
+
+body .introduction .intro-phrase .email-btn:hover {
+  background: #f1f5f7;
+  color: #0e0d0d;
+  border: 2px solid #0e0d0d;
 }
 
 body .introduction img {
@@ -259,7 +226,9 @@ body .skill-cards {
 
 body .skill-cards h3 {
   text-align: center;
-  font-size: 150%;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 body .skill-cards .skills {
@@ -277,23 +246,23 @@ body .skill-cards .skills {
 }
 
 body .skill-cards .skills .card {
-  border: 2px solid #7043ac;
-  width: 85%;
+  border: 2px solid #0e0d0d;
+  width: 100%;
   height: auto;
-  margin: 20px auto;
-  padding: 20px 20px 30px;
+  margin: 20px 30px;
+  padding: 20px auto;
   line-height: 2;
   border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 3px #403f91;
-          box-shadow: 2px 2px 3px #403f91;
-  background-color: #c5a0f5;
+  -webkit-box-shadow: 2px 2px 3px #2e2d2d;
+          box-shadow: 2px 2px 3px #2e2d2d;
+  background-color: #f1f5f7;
   font-weight: 600;
   color: #3b3737;
 }
 
 body .skill-cards .skills .card h4 {
   text-align: center;
-  padding: auto auto;
+  padding: auto;
   -webkit-text-decoration: navy underline solid;
           text-decoration: navy underline solid;
   color: black;
@@ -318,16 +287,12 @@ body .skill-cards .skills .card .skill-icons img {
 }
 
 body .skill-cards .skills .card ul {
-  text-align: center;
+  padding: auto;
 }
 
 body .skill-cards .skills .card ul li {
-  list-style: none;
-}
-
-body .skill-cards .skills .card3 h4, body .skill-cards .skills .card4 h4 {
-  font-family: elephant,georgia, Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  list-style-type: none;
+  text-align: center;
 }
 
 body .work-cards {
@@ -337,6 +302,8 @@ body .work-cards {
 body .work-cards h3 {
   text-align: center;
   font-size: 1.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 body .work-cards .projects {
@@ -354,7 +321,7 @@ body .work-cards .projects {
 }
 
 body .work-cards .projects .card {
-  border: 2px solid #7043ac;
+  border: 2px solid #0e0d0d;
   width: 90vw;
   max-width: 1000px;
   height: auto;
@@ -363,20 +330,18 @@ body .work-cards .projects .card {
   padding: 10px 0 0;
   line-height: 2;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 3px #403f91;
-          box-shadow: 2px 2px 3px #403f91;
-  background-color: #c5a0f5;
+  -webkit-box-shadow: 2px 2px 3px #444242;
+          box-shadow: 2px 2px 3px #444242;
+  background-color: #f1f5f7;
   font-weight: 600;
-  color: #3b3737;
+  color: #0e0d0d;
 }
 
 body .work-cards .projects .card h4 {
   text-align: center;
   font-family: georgia, Arial, Helvetica, sans-serif;
   padding: auto auto;
-  -webkit-text-decoration: #4b7475 underline solid;
-          text-decoration: #4b7475 underline solid;
-  color: #964a0c;
+  color: #0e0d0d;
   font-size: 150%;
 }
 
@@ -386,27 +351,25 @@ body .work-cards .projects .card img {
 }
 
 body .work-cards .projects .card h5 {
-  background-image: linear-gradient(30deg, #a02eaa 5%, #85e2e4);
-  width: 100%;
-  padding: 10px;
+  background-image: none;
   text-align: center;
-  border-bottom: 1px solid #7043ac;
+  border-bottom: 1px solid #0e0d0d;
 }
 
 body .work-cards .projects .card h5 a {
   text-decoration: none;
   font-size: 115%;
-  color: #16151d;
+  color: blue;
   text-transform: uppercase;
 }
 
 body .work-cards .projects .card h5 a:hover {
-  color: brown;
+  color: #0e0d0d;
   text-decoration: underline;
 }
 
-body .work-cards .projects .card h5:hover {
-  background-image: linear-gradient(-30deg, #a02eaa 5%, #85e2e4);
+body .work-cards .projects .card p {
+  margin: auto 15px;
 }
 
 body .work-cards button {
@@ -421,7 +384,7 @@ body .work-cards button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #722a85;
+  background-color: #f1f5f7;
   border: none;
   outline: none;
   padding: 5px 10px;
@@ -446,42 +409,58 @@ body .work-cards button:hover {
 }
 
 body .work-cards button:hover a {
-  color: #b92804;
+  color: #4d2920;
   text-shadow: none;
+}
+
+body .more-btn {
+  background: #0e0d0d;
+  margin: auto 25%;
+  border-radius: 5px;
+  padding: 4px 5px;
+  color: #f1f5f7;
+  border: 2px solid #0e0d0d;
+  -webkit-transition: 00.3s;
+  transition: 00.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f1f5f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 00.3s;
+}
+
+body .more-btn:hover {
+  background: #f1f5f7;
+  color: #0e0d0d;
+  border: 2px solid #0e0d0d;
 }
 
 body .about-me {
   padding: 10px 15px;
-  line-height: 1.7;
-  background-color: #d9f0f1;
-  background-size: cover;
-  font-size: 0.8rem;
   max-width: 100vw;
   width: 90vw;
+  line-height: 2;
+  background-color: #f1f5f7;
+  font-size: 0.95rem;
   margin: auto;
 }
 
-body .about-me h3, body .about-me h4 {
-  color: lightcoral;
+body .about-me h3 {
+  color: #0e0d0d;
   text-align: center;
   letter-spacing: 1.5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c94eaa), color-stop(#97051d), to(#1b2525));
-  background-image: linear-gradient(to bottom, #c94eaa, #97051d, #1b2525);
-  -webkit-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 body .about-me p {
   text-align: justify;
-}
-
-body .about-me p span {
-  color: #290dc5;
-  font-size: 1.1rem;
-  font-weight: 600;
 }
 
 body .contact {
@@ -501,69 +480,39 @@ body .contact {
           align-items: center;
 }
 
-body .contact img {
-  width: 70vw;
-}
-
-body .contact form {
-  padding: 20px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .contact form h4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-body .contact form input {
-  padding: 10px 5px 3px 5px;
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 20px;
-  width: 100%;
-  border-radius: 5px;
-}
-
-body .contact form .msg-box {
-  height: 100px;
-  padding: 0;
-}
-
-body .contact form .email-btn {
-  background: #6a057e;
+body .contact .email-btn {
+  background: #0e0d0d;
   margin: 10px auto;
   border-radius: 5px;
   padding: 4px 5px;
-  color: lemonchiffon;
+  color: #f1f5f7;
+  border: 2px solid #0e0d0d;
+  -webkit-transition: 00.3s;
+  transition: 00.3s;
 }
 
-body .contact form .email-btn a {
-  color: lemonchiffon;
+body .contact .email-btn a {
+  color: #f1f5f7;
   text-decoration: none;
   text-align: center;
+  -webkit-transition: 00.3s;
+  transition: 00.3s;
 }
 
-body .contact form .email-btn:hover {
-  background: #d814ff;
-  color: #e93629;
-  -webkit-text-decoration: #92f312 none;
-          text-decoration: #92f312 none;
-  text-shadow: 2px 2px 2px #160b13;
+body .contact .email-btn a:hover {
+  color: #0e0d0d;
+}
+
+body .contact .email-btn:hover {
+  background: #f1f5f7;
+  color: #0e0d0d;
+  border: 2px solid #0e0d0d;
 }
 
 body footer {
-  background-color: #5aa5e2;
+  background-color: #f1f5f7;
+  -webkit-box-shadow: 5px 0px 3px #0e0d0d;
+          box-shadow: 5px 0px 3px #0e0d0d;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,7 +527,7 @@ body footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100vw;
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -595,13 +544,13 @@ body footer .socials img {
 }
 
 body footer .socials img:hover {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 body footer a {
   text-decoration: none;
-  color: black;
+  color: #0e0d0d;
 }
 
 body footer a p {
@@ -610,21 +559,12 @@ body footer a p {
 }
 
 body footer a:hover {
-  color: #6b0585;
-}
-
-@media (max-width: 320px) {
-  body .about-me {
-    width: 100vw;
-  }
-  body footer {
-    width: 100vw;
-  }
+  color: blue;
 }
 
 @media (min-width: 700px) {
   body {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   body header {
     display: -webkit-box;
@@ -635,18 +575,18 @@ body footer a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 99vw;
-    padding: auto 30px;
-    background-color: rgba(68, 185, 214, 0.25);
+    margin: auto;
     overflow-x: hidden;
+    width: 100%;
+    background-color: rgba(192, 191, 247, 0.2);
   }
   body header img {
     width: 3rem;
     max-width: 100px;
+    margin-left: 5px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    background-color: rgba(68, 185, 214, 0);
   }
   body header .desktop {
     -webkit-box-flex: 4;
@@ -672,32 +612,20 @@ body footer a:hover {
   body header .open-nav {
     display: none;
   }
-  body .introduction {
-    padding: 20px 35px;
-  }
   body .introduction .intro-phrase {
-    line-height: 3;
+    line-height: 1.5;
+  }
+  body .introduction .intro-phrase h2 {
+    text-align: center;
   }
   body .introduction .intro-phrase p {
-    background-color: rgba(252, 249, 249, 0.5);
     padding: 5px;
     border-radius: 6px;
-    width: 50vw;
-  }
-  body .introduction .intro-phrase span {
-    font-size: 100%;
-  }
-  body .introduction .intro-phrase .typewritten {
-    color: #bd2207;
-    -webkit-box-shadow: 2px 2px 3px #a252fd;
-            box-shadow: 2px 2px 3px #a252fd;
-    font-size: 75%;
-    height: 75px;
-    vertical-align: middle;
-    padding: auto auto;
+    width: 80vw;
   }
   body .introduction .intro-phrase a {
-    font-size: 17px;
+    font-size: 16px;
+    margin: auto;
   }
   body .introduction img {
     display: none;
@@ -706,8 +634,8 @@ body footer a:hover {
     font-size: 160%;
   }
   body .skill-cards .skills .card {
-    width: 45%;
-    height: 400px;
+    width: 80%;
+    height: auto;
     margin: 20px auto;
     padding: 20px 20px 30px;
     line-height: 2.5;
@@ -721,7 +649,7 @@ body footer a:hover {
   body .about-me {
     padding: 20px 80px;
     line-height: 2;
-    background-color: #d9f0f1;
+    background-color: inherit;
   }
   body .about-me h3, body .about-me h4 {
     font-size: 1.4rem;
@@ -754,8 +682,11 @@ body footer a:hover {
     height: 150px;
     padding: 0;
   }
+  body footer {
+    width: 100vw;
+  }
   body footer .socials img {
-    width: 40px;
+    width: 30px;
     margin: 20px 30px;
   }
   body footer p {
@@ -765,12 +696,12 @@ body footer a:hover {
 
 @media (min-width: 1440px) {
   body {
-    font-size: 1.5rem;
-    width: 75vw;
+    font-size: 1.2rem;
+    width: 100vw;
     margin: auto;
   }
   body .about-me {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   body footer {
     width: 100vw;
