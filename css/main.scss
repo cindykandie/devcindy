@@ -131,7 +131,8 @@ body{
             background-repeat: no-repeat;
 
             h2{
-                margin-left: 15px;
+                margin-left: 5px;
+                text-align: center;
                     
 
             }
@@ -151,7 +152,7 @@ body{
                 margin: 10px auto;
                 border-radius:5px;
                 padding: 4px 5px;
-                margin-left: 1rem;
+                margin:auto;
                 color: $mainColor;
                 border: 2px solid $primaryColor;
                 transition: 00.3s;
@@ -282,6 +283,7 @@ body{
                 img{
                     width: 100%;
                     padding: 0px 10px;
+                    // transition: 0.3s;
                 }
                 h5{
                     background-image:none;
